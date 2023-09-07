@@ -14,11 +14,12 @@ func PrintTitle(word string) {
 		PaddingRight(2).
 		Align(lipgloss.Center)
 
+	fmt.Println()
 	fmt.Println(style.Render(word))
 	fmt.Println()
 }
 
-func PrintError(err string) {
+func PrintError(err error) {
 	var style = lipgloss.NewStyle().
 		Bold(true).
 		Foreground(lipgloss.Color("231")).
@@ -27,6 +28,7 @@ func PrintError(err string) {
 		PaddingRight(2).
 		Align(lipgloss.Center)
 
-	fmt.Println(style.Render(err))
+	fmt.Println()
+	fmt.Println(style.Render("ERROR"), err)
 	fmt.Println()
 }

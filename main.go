@@ -2,13 +2,20 @@ package main
 
 import (
 	"dev-xero/caesar-cipher/log"
-	"dev-xero/caesar-cipher/utils"
 	"fmt"
+	"os"
 )
 
 func main() {
 	log.PrintTitle("Caesar Cipher")
 
-	cipher := utils.GenerateCipher("password", 8)
-	fmt.Println(cipher)
+	var word string
+	fmt.Print("Word: ")
+	_, err := fmt.Scanln(&word)
+	if err != nil {
+		log.PrintError(err)
+		os.Exit(1)
+	}
+
+	fmt.Println(word)
 }
