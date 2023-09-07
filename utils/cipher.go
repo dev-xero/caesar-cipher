@@ -12,7 +12,7 @@ func GenerateCipher(word string, shift int) string {
 		char := word[i]
 
 		if char < 'a' || char > 'z' {
-			log.PrintError(errors.New("invalid letter encountered"))
+			log.Error(errors.New("invalid letter encountered"))
 		}
 
 		index := (int(char-'a') + shift) % 26

@@ -8,13 +8,13 @@ import (
 )
 
 func main() {
-	log.PrintTitle("Caesar Cipher")
+	log.Title("Caesar Cipher")
 
 	var word string
 	fmt.Print("Word: ")
 	_, err := fmt.Scanln(&word)
 	if err != nil {
-		log.PrintError(err)
+		log.Error(err)
 		os.Exit(1)
 	}
 
@@ -22,10 +22,10 @@ func main() {
 	fmt.Print("Shift: ")
 	_, err = fmt.Scanln(&shift)
 	if err != nil {
-		log.PrintError(err)
+		log.Error(err)
 		os.Exit(1)
 	}
 
 	cipher := utils.GenerateCipher(word, shift)
-	log.PrintResult(cipher)
+	log.Result(cipher)
 }

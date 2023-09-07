@@ -2,10 +2,11 @@ package log
 
 import (
 	"fmt"
+
 	"github.com/charmbracelet/lipgloss"
 )
 
-func PrintTitle(word string) {
+func Title(word string) {
 	var style = lipgloss.NewStyle().
 		Bold(true).
 		Foreground(lipgloss.Color("231")).
@@ -19,7 +20,7 @@ func PrintTitle(word string) {
 	fmt.Println()
 }
 
-func PrintError(err error) {
+func Error(err error) {
 	var style = lipgloss.NewStyle().
 		Bold(true).
 		Foreground(lipgloss.Color("231")).
@@ -33,7 +34,7 @@ func PrintError(err error) {
 	fmt.Println()
 }
 
-func PrintResult(res string) {
+func Result(res string) {
 	var style = lipgloss.NewStyle().
 		Bold(true).
 		Foreground(lipgloss.Color("231")).
