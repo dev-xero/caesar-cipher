@@ -32,3 +32,17 @@ func PrintError(err error) {
 	fmt.Println(style.Render("ERROR"), err)
 	fmt.Println()
 }
+
+func PrintResult(res string) {
+	var style = lipgloss.NewStyle().
+		Bold(true).
+		Foreground(lipgloss.Color("231")).
+		Background(lipgloss.Color("#42F590")).
+		PaddingLeft(2).
+		PaddingRight(2).
+		Align(lipgloss.Center)
+
+	fmt.Println()
+	fmt.Println(style.Render("RESULT"), res)
+	fmt.Println()
+}
