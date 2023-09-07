@@ -10,10 +10,12 @@ func PrintTitle(word string) {
 		Bold(true).
 		Foreground(lipgloss.Color("231")).
 		Background(lipgloss.Color("#42B0F5")).
-		Width(22).
+		PaddingLeft(2).
+		PaddingRight(2).
 		Align(lipgloss.Center)
 
 	fmt.Println(style.Render(word))
+	fmt.Println()
 }
 
 func PrintError(err string) {
@@ -21,8 +23,10 @@ func PrintError(err string) {
 		Bold(true).
 		Foreground(lipgloss.Color("231")).
 		Background(lipgloss.Color("#FF584D")).
-		Width(22).
+		PaddingLeft(2).
+		PaddingRight(2).
 		Align(lipgloss.Center)
 
 	fmt.Println(style.Render(err))
+	fmt.Println()
 }
