@@ -1,6 +1,6 @@
 <h1><img src="./assets/gopher.png" width="32px"/> Caesar Cipher</h1>
 
-<img src="./assets/ui.gif" />
+<img src="./assets/ui.png" width="720px" />
 
 Simple Go implementation of a Caesar Cipher Algorithm.
 
