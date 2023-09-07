@@ -11,8 +11,8 @@ func Title(word string) {
 		Bold(true).
 		Foreground(lipgloss.Color("231")).
 		Background(lipgloss.Color("#42B0F5")).
-		PaddingLeft(2).
-		PaddingRight(2).
+		PaddingLeft(1).
+		PaddingRight(1).
 		Align(lipgloss.Center)
 
 	fmt.Println()
@@ -25,8 +25,8 @@ func Error(err error) {
 		Bold(true).
 		Foreground(lipgloss.Color("231")).
 		Background(lipgloss.Color("#FF584D")).
-		PaddingLeft(2).
-		PaddingRight(2).
+		PaddingLeft(1).
+		PaddingRight(1).
 		Align(lipgloss.Center)
 
 	fmt.Println()
@@ -39,8 +39,8 @@ func Result(res string) {
 		Bold(true).
 		Foreground(lipgloss.Color("231")).
 		Background(lipgloss.Color("#42F590")).
-		PaddingLeft(2).
-		PaddingRight(2).
+		PaddingLeft(1).
+		PaddingRight(1).
 		Align(lipgloss.Center)
 
 	fmt.Println()
