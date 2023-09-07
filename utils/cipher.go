@@ -3,13 +3,15 @@ package utils
 import (
 	"dev-xero/caesar-cipher/log"
 	"errors"
+	"strings"
 )
 
 func GenerateCipher(word string, shift int) string {
 	shiftedLetters := []rune{}
+	lowercaseWord := strings.ToLower(word)
 
 	for i := 0; i < len(word); i++ {
-		char := word[i]
+		char := lowercaseWord[i]
 
 		if char < 'a' || char > 'z' {
 			log.Error(errors.New("invalid letter encountered"))
