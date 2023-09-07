@@ -15,3 +15,14 @@ func PrintTitle(word string) {
 
 	fmt.Println(style.Render(word))
 }
+
+func PrintError(err string) {
+	var style = lipgloss.NewStyle().
+		Bold(true).
+		Foreground(lipgloss.Color("231")).
+		Background(lipgloss.Color("#FF584D")).
+		Width(22).
+		Align(lipgloss.Center)
+
+	fmt.Println(style.Render(err))
+}
