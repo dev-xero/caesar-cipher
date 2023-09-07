@@ -2,12 +2,10 @@ package utils
 
 import (
 	"dev-xero/caesar-cipher/log"
-	"fmt"
-	"strings"
 )
 
 func GenerateCipher(word string, shift int) string {
-	shiftedLetters := []string{}
+	shiftedLetters := []rune{}
 
 	for i := 0; i < len(word); i++ {
 		char := word[i]
@@ -21,8 +19,8 @@ func GenerateCipher(word string, shift int) string {
 			index += 26
 		}
 
-		shiftedLetters = append(shiftedLetters, fmt.Sprintf("%d", index))
+		shiftedLetters = append(shiftedLetters, rune('a'+index))
 	}
 
-	return strings.Join(shiftedLetters, "")
+	return string(shiftedLetters)
 }
