@@ -16,7 +16,7 @@ func GenerateCipher(word string, shift int) string {
 			log.Fatal("[ERR]: Invalid letter encountered")
 		}
 
-		index := (int(char - 'a') + shift) % 26
+		index := (int(char-'a') + shift) % 26
 		if index < 0 {
 			index += 26
 		}
