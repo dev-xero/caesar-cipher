@@ -2,7 +2,7 @@ package utils
 
 import (
 	"fmt"
-	"log"
+	"dev-xero/caesar-cipher/log"
 	"strings"
 )
 
@@ -13,7 +13,7 @@ func GenerateCipher(word string, shift int) string {
 		char := word[i]
 
 		if char < 'a' || char > 'z' {
-			log.Fatal("[ERR]: Invalid letter encountered")
+			log.PrintError("[ERR]: Invalid letter encountered")
 		}
 
 		index := (int(char-'a') + shift) % 26
