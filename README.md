@@ -1,9 +1,9 @@
 <h1><img src="./assets/gopher.png" width="32px"/> Caesar Cipher</h1>
 
 <img src="./assets/ui.webp" width="720px" />
-<img src="https://img.shields.io/github/license/dev-xero/caesar-cipher?style=for-the-badge&colorA=42B0F5&colorB=FFFFFF&logo=markdown" /> 
 
-Simple Go implementation of a Caesar Cipher Algorithm.
+Simple Go implementation of a Caesar Cipher Algorithm.  
+
 The Caesar Cipher is a fundamental cryptographic technique in which letters within a word undergo precise shifts forward or backward by a specified amount, resulting in the creation of a new word with altered letter positions. It proves particularly valuable for safeguarding uncomplicated passwords.
 
 ## Example
