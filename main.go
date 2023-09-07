@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	log.Title("Caesar Cipher")
+	log.Title("CAESAR CIPHER")
 
 	var word string
 	fmt.Print("Word: ")
