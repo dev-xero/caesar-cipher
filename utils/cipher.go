@@ -1,8 +1,8 @@
 package utils
 
 import (
-	"fmt"
 	"dev-xero/caesar-cipher/log"
+	"fmt"
 	"strings"
 )
 
