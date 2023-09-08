@@ -6,8 +6,9 @@ Simple Go implementation of a Caesar Cipher Algorithm.
 
 The Caesar Cipher is a fundamental cryptographic technique in which letters within a word undergo precise shifts forward or backward by a specified amount, resulting in the creation of a new word with altered letter positions. It proves particularly valuable for safeguarding uncomplicated passwords.
 
-## How to use
-You need the [Go compiler]("https://go.dev/dl/") installed to compile the script.  
+## Running the script
+> [!IMPORTANT]
+> You need the [Go compiler]("https://go.dev/dl/") installed to compile the script.  
 
 Compiling:  
 ```go
@@ -15,7 +16,7 @@ go fmt ./...
 go build -o .\bin\ ./...
 ```
 
-> Note  
+> [!NOTE]  
 > You can change the build location to somewhere else using the -o flag
 
 Running:
