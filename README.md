@@ -15,20 +15,16 @@ Compiling:
 go fmt ./...
 go build -o .\bin\ ./...
 ```
-<details>
-  <summary>Changing the compile location</summary>
-  <p>You can change the build location to somewhere else using the -o flag</p>
-</details>
 
 Running:
 ```go
 .\bin\caesar-cipher
 ```
 
-
+<br />
 > [!NOTE]
-> Better still, you can batch run those commands using make
-> ```make
+> Better still, you can batch run those commands using make (you need make installed)
+> ```shell
 > make
 > ```
 
