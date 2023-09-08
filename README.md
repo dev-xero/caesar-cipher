@@ -8,7 +8,7 @@ The Caesar Cipher is a fundamental cryptographic technique in which letters with
 
 ## Running the script
 > [!IMPORTANT]
-> You need the [Go compiler]("https://go.dev/dl/") installed to compile the script.  
+> You need the [Go compiler](https://go.dev/dl/) installed to compile the script.  
 
 Compiling:  
 ```go
@@ -21,10 +21,9 @@ Running:
 .\bin\caesar-cipher
 ```
 
-<br />
 > [!NOTE]
-> Better still, you can batch run those commands using make (you need make installed)
-> ```shell
+> You can batch execute those commands using make (you need make installed)
+> ```bash
 > make
 > ```
 
