@@ -1,6 +1,6 @@
 <h1><img src="./assets/gopher.png" width="32px"/> Caesar Cipher</h1>
 
-Simple Go implementation of a Caesar Cipher Algorithm.  
+A CLI tool for encrypting text using the Caesar Cipher, written in Go.  
 
 The Caesar Cipher is a fundamental cryptographic technique in which letters within a word undergo precise shifts forward or backward by a specified amount, resulting in the creation of a new word with altered letter positions. It proves particularly valuable for safeguarding uncomplicated passwords.
 
