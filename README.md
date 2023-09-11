@@ -8,7 +8,6 @@ The Caesar Cipher is a fundamental cryptographic technique in which letters with
 > [!IMPORTANT]
 > You need the [Go compiler](https://go.dev/dl/) installed to compile the script.  
 
-Compiling:  
 ```go
 go fmt ./...
 go build -o .\bin\ ./...
@@ -20,7 +19,7 @@ go build -o .\bin\ ./...
 > make
 > ```
 
-## Using
+## Usage
 
 Say, we decide to encrypt the word "password" forward by eight shifts, we simply just pass the word and the shift number as arguments:  
 ```go
@@ -33,4 +32,4 @@ Say, we decide to encrypt the word "password" forward by eight shifts, we simply
 - Shifted (by 8): `x` `i` `a` `a` `e` `w` `z` `l`
 
 
-The `-e` flag writes the result to a text file which is stored in a directory called "exported".
+The `-e` flag writes the result to a text file which is stored in a directory named "exported".
