@@ -24,7 +24,7 @@ func main() {
 
 	if word := flag.Arg(0); word != "" {
 		if shift, err := strconv.Atoi(flag.Arg(1)); err == nil {
-			encryptedText := utils.GenerateCipher(word, shift)
+			encryptedText := utils.Cipher(word, shift)
 
 			fmt.Println("Text:", word)
 			fmt.Println("Shift:", shift)

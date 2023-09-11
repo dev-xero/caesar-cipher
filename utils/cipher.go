@@ -7,7 +7,7 @@ import (
 	"unicode"
 )
 
-func GenerateCipher(word string, shift int) string {
+func Cipher(word string, shift int) string {
 	encryptedText := ""
 
 	for _, char := range word {
