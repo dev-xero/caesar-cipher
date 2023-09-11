@@ -22,13 +22,15 @@ go build -o .\bin\ ./...
 
 ## Using
 
-Say, we decide to encrypt the word "password" forward by eight shifts, we just simply supply the word and the shift number:  
+Say, we decide to encrypt the word "password" forward by eight shifts, we simply just pass the word and the shift number as arguments:  
 ```go
 .\bin\caesar-cipher -e password 8
 ```
+
+### Result
 
 -  Original: `p` `a` `s` `s` `w` `o` `r` `d` 
 - Shifted (by 8): `x` `i` `a` `a` `e` `w` `z` `l`
 
 
-The `-e` flag exports the encrypted word in a text file stored in a directory called "exported".
+The `-e` flag writes the result to a text file which is stored in a directory called "exported".
