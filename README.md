@@ -6,8 +6,29 @@ Simple Go implementation of a Caesar Cipher Algorithm.
 
 The Caesar Cipher is a fundamental cryptographic technique in which letters within a word undergo precise shifts forward or backward by a specified amount, resulting in the creation of a new word with altered letter positions. It proves particularly valuable for safeguarding uncomplicated passwords.
 
-## Example
+## Running the script
+> [!IMPORTANT]
+> You need the [Go compiler](https://go.dev/dl/) installed to compile the script.  
 
-Say, we decide to cipher the word "password" forward by eight shifts, we'd have:  
+Compiling:  
+```go
+go fmt ./...
+go build -o .\bin\ ./...
+```
+
+Running:
+```go
+.\bin\caesar-cipher
+```
+
+> [!NOTE]
+> You can batch execute those commands using make (you need make installed)
+> ```bash
+> make
+> ```
+
+## Ciphering
+
+Say, we decide to encrypt the word "password" forward by eight shifts, using the Caesar Cipher we'd have:  
 -  Original: `p` `a` `s` `s` `w` `o` `r` `d` 
 - Shifted (by 8): `x` `i` `a` `a` `e` `w` `z` `l`
